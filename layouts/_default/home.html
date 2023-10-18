@@ -1,0 +1,7 @@
+{{ define "main" }}
+  {{ .Content }}
+  {{ $curSection := .CurrentSection }}
+  {{ range site.RegularPages }}
+    {{ partial "toc-entry.html" (dict "curSection" $curSection "entry" . ) }}
+  {{ end }}
+{{ end }}

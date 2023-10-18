@@ -1,0 +1,16 @@
+<h1 class="header">
+  {{ if .IsHome }}
+    {{ site.Title }}
+  {{ else }}
+    <ol class="sections">
+      {{- range .Ancestors.Reverse -}}
+        {{- if (or .IsHome .IsSection) -}}
+          <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+        {{- end -}}
+      {{- end -}}
+      {{- if .IsSection -}}
+        <li>{{ .Title }}</li>
+      {{- end -}}
+    </ol>
+  {{ end }}
+</h1>

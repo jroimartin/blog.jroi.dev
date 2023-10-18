@@ -1,0 +1,115 @@
+body {
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 32px;
+    padding-left: 32px;
+    font-family: serif;
+    line-height: 1.5;
+}
+
+a {
+    color: #0969da;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a.header {
+    color: #000000;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+}
+
+h1, h2 {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+pre, code {
+    background-color: #e6e6e6;
+    font-family: monospace;
+}
+
+pre {
+    padding: 16px;
+    border-radius: 6px;
+    overflow: auto;
+}
+
+code {
+    padding: 4px;
+    border-radius: 6px;
+}
+
+pre code {
+    padding: 0;
+    border-radius: 0;
+}
+
+table {
+    display: block;
+    overflow: auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 6px 16px;
+    border: 1px solid #e6e6e6;
+}
+
+footer {
+    margin-top: 24px;
+    font-size: 0.8em;
+    color: #666666;
+}
+
+div.toc-entry {
+    margin-bottom: 24px;
+}
+
+div.toc-entry p {
+    margin: 0;
+}
+
+div.toc-entry time {
+    font-size: 0.8em;
+    color: #666666;
+}
+
+ol.sections {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+ol.sections li {
+    display: inline-block;
+}
+
+ol.sections li:not(:last-child)::after {
+    content: "»";
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+div.toc-entry ol.sections::before {
+    content: "[";
+}
+
+div.toc-entry ol.sections::after {
+    content: "]";
+}
+
+h2.article-title time {
+    font-size: 0.6em;
+    display: block;
+    color: #666666;
+}

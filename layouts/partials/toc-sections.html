@@ -1,0 +1,10 @@
+{{ if ne .entry.CurrentSection .curSection }}
+  <ol class="sections">
+    {{- $curSection := .curSection -}}
+    {{- range .entry.Ancestors.Reverse -}}
+      {{- if .CurrentSection.IsDescendant $curSection -}}
+        <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+      {{- end -}}
+    {{- end -}}
+  </ol>
+{{ end }}
