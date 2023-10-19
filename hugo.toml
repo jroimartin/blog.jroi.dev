@@ -7,3 +7,6 @@ copyright = '''
   <a href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
   '''
 disableKinds = ['taxonomy', 'term']
+
+[params]
+profileURLs = ['https://fosstodon.org/@jroimartin']
