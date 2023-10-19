@@ -115,11 +115,11 @@ div.toc-entry time {
 }
 
 div.toc-entry ol.sections::before {
-    content: "[";
+    content: "(";
 }
 
 div.toc-entry ol.sections::after {
-    content: "]";
+    content: ")";
 }
 
 div.article p {
