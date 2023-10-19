@@ -32,6 +32,12 @@ h1, h2 {
     border-bottom: 1px solid #e6e6e6;
 }
 
+h2.article-title time {
+    font-size: 0.6em;
+    display: block;
+    color: #666666;
+}
+
 pre, code {
     background-color: #e6e6e6;
     font-family: monospace;
@@ -53,6 +59,14 @@ pre code {
     border-radius: 0;
 }
 
+blockquote {
+    color: #666666;
+    margin: 0px;
+    padding: 0px 20px;
+    font-style: italic;
+    border-left: thick solid #e6e6e6;
+}
+
 table {
     display: block;
     overflow: auto;
@@ -67,19 +81,6 @@ table th, table td {
 
 footer {
     margin-top: 24px;
-    font-size: 0.8em;
-    color: #666666;
-}
-
-div.toc-entry {
-    margin-bottom: 24px;
-}
-
-div.toc-entry p {
-    margin: 0;
-}
-
-div.toc-entry time {
     font-size: 0.8em;
     color: #666666;
 }
@@ -100,6 +101,19 @@ ol.sections li:not(:last-child)::after {
     margin-right: 5px;
 }
 
+div.toc-entry {
+    margin-bottom: 24px;
+}
+
+div.toc-entry p {
+    margin: 0;
+}
+
+div.toc-entry time {
+    font-size: 0.8em;
+    color: #666666;
+}
+
 div.toc-entry ol.sections::before {
     content: "[";
 }
@@ -108,8 +122,7 @@ div.toc-entry ol.sections::after {
     content: "]";
 }
 
-h2.article-title time {
-    font-size: 0.6em;
-    display: block;
-    color: #666666;
+div.article p {
+    text-align: justify;
+    text-justify: inter-word;
 }
