@@ -1,7 +1,10 @@
 body {
   max-width: 900px;
   margin: 0 auto;
-  padding: 24px 32px;
+  padding-top: 24px;
+  padding-bottom: 0px;
+  padding-left: 32px;
+  padding-right: 32px;
   font-family: serif;
   line-height: 1.5;
 }
