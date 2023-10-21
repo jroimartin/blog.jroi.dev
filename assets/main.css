@@ -1,7 +1,7 @@
 body {
   max-width: 900px;
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 24px 32px;
   font-family: serif;
   line-height: 1.5;
 }
@@ -9,24 +9,26 @@ body {
 a {
   color: #0969da;
   text-decoration: none;
+}
 
-  &:hover {
-    text-decoration: underline;
-  }
+a:hover {
+  text-decoration: underline;
 }
 
 table {
   display: block;
   overflow: auto;
   border-collapse: collapse;
-
-  th, td {
-    padding: 6px 16px;
-    border: 1px solid #e6e6e6;
-  }
 }
 
-pre, code {
+table th,
+table td {
+  padding: 6px 16px;
+  border: 1px solid #e6e6e6;
+}
+
+pre,
+code {
   font-family: monospace;
   background-color: #ffffdd;
   border: 1px solid #e6e6e6;
@@ -36,11 +38,11 @@ pre, code {
 pre {
   padding: 16px;
   overflow: auto;
+}
 
-  code {
-    padding: 0;
-    border: 0;
-  }
+pre code {
+  padding: 0;
+  border: 0;
 }
 
 code {
@@ -59,76 +61,74 @@ ol.sections {
   padding: 0;
   margin: 0;
   display: inline-block;
+}
 
-  li {
-    display: inline-block;
+ol.sections li {
+  display: inline-block;
+}
 
-    &:not(:last-child)::after {
-      content: "»";
-      margin-left: 5px;
-      margin-right: 5px;
-    }
-  }
+ol.sections li:not(:last-child)::after {
+  content: "»";
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 header {
-  margin-top: 24px;
   margin-bottom: 16px;
   padding-bottom: 8px;
   border-bottom: 1px solid #e6e6e6;
-
-  h1 {
-    font-size: 2em;
-    margin: 0;
-  }
-
-  time {
-    color: #666666;
-  }
 }
 
-main {
-  header h1 {
-    font-size: 1.75em;
-  }
+header h1 {
+  font-size: 2em;
+  margin: 0;
+}
 
-  div.toc-entry {
-    margin-bottom: 24px;
+header time {
+  color: #666666;
+}
 
-    p {
-      margin: 0;
-    }
+main header h1 {
+  font-size: 1.75em;
+}
 
-    time {
-      font-size: 0.8em;
-      color: #666666;
-    }
+main div.toc-entry {
+  margin-bottom: 24px;
+}
 
-    ol.sections{
-      &::before { content: "("; }
-      &::after { content: ")"; }
-    }
-  }
+main div.toc-entry p {
+  margin: 0;
+}
 
-  article {
-    h1, h2, h3, h4, h5, h6 {
-      margin-top: 24px;
-      margin-bottom: 16px;
-      padding-bottom: 8px;
-    }
+main div.toc-entry time {
+  font-size: 0.8em;
+  color: #666666;
+}
 
-    h1 { font-size: 1.25em; }
-    h2 { font-size: 1.125em; }
-    h3 { font-size: 1em; }
-    h4 { font-size: 0.875em; }
-    h5 { font-size: 0.75em; }
-    h6 { font-size: 0.625em; }
+main div.toc-entry ol.sections::before { content: "("; }
+main div.toc-entry ol.sections::after { content: ")"; }
 
-    p {
-      text-align: justify;
-      text-justify: inter-word;
-    }
-  }
+main article h1,
+main article h2,
+main article h3,
+main article h4,
+main article h5,
+main article h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+}
+
+main article h1 { font-size: 1.25em; }
+main article h2 { font-size: 1.125em; }
+main article h3 { font-size: 1em; }
+main article h4 { font-size: 0.875em; }
+main article h5 { font-size: 0.75em; }
+main article h6 { font-size: 0.625em; }
+
+main article p {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 footer {
