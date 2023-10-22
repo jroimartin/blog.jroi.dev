@@ -143,6 +143,11 @@ main article h6 { font-size: 0.625em; }
 main article img {
   display: block;
   margin: 0 auto;
+  max-width: 100%;
+}
+
+main article figure {
+  margin: 0;
 }
 
 main article figure figcaption {
