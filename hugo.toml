@@ -8,5 +8,8 @@ copyright = '''
   '''
 disableKinds = ['taxonomy', 'term']
 
+[markup.goldmark.renderer]
+unsafe = true
+
 [params]
 profileURLs = ['https://fosstodon.org/@jroimartin']
