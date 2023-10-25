@@ -6,12 +6,13 @@ summary = 'Brief introduction.'
 
 Hello, world!
 
-My name is Roi Martin. I am a computer programmer and a security
-enthusiast that has been lucky enough to make a living out of
-combining both passions.
+My name is Roi Martin.
+I am a computer programmer and a security enthusiast that has been
+lucky enough to make a living out of combining both passions.
 
 I am one of those people that think that code can be beautiful and
-elegant. But, what do I mean by that?
+elegant.
+But, what does that even mean?
 
 > Elegance is articulating the value of absence.
 
@@ -20,10 +21,10 @@ during the [Strange Loop Conference] in 2023 and explains pretty well
 what it means to me.
 
 I have created this blog as a means to share ideas, projects, links
-and, in general, anything I consider interesting. I do not expect to
-publish content regularly, but I feel the need for a place where I can
-share content at length without the (not always technical) constraints
-imposed by many platforms.
+and, in general, anything I consider interesting.
+I do not expect to publish content regularly, but I feel the need for
+a place where I can share content at length without the (not always
+technical) constraints imposed by many platforms.
 
 You can also find me in [GitHub], where I publish most of my projects,
 and [Mastodon].
